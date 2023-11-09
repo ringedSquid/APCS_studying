@@ -39,3 +39,12 @@ public class Inheritence {
 	 * without super() keyword, the this.method() gets called 
 	 *
 	 * keyword super
+	 *
+	 * Is a relationship in java
+	 *
+	 * a subclass is a superclass but the superclass is not the subclass
+	 *
+	 * Superclass = Superclass
+	 * Subclass = Subclass
+	 * Superclass = Subclass
+	 * Subclass != superclass no is a relationship
