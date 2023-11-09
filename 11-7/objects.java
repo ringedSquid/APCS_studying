@@ -59,10 +59,28 @@ public class objects {
 	 * 			this.x = x;
 	 * 		}
 	 *
+	 * 	explicit contstructor invocation
+	 * 	using this() to call another constructor in the same class
+	 *
+	 * 	example of use:
+	 *
+	 * 	public Rectangle() {
+	 * 		this(0, 0, 1, 1);
+	 * 	}
+	 *
+	 * 	public Rectangle(int x, int y, int width, int height) {
+	 * 		blah blah
+	 * 	}
+	 *      As you can see here, the no arg constructor uses the other constructor
+		 *      to function. Cool right?
+		 *
+		 *
 	 *
 	 * Public vs Private? 
 	 * the modifiers public and private let you control what other classes
 	 * who have access to the class have access to.
+	 *
+	 * by default, fields with no modifiers are public
 	 *
 	 * public - this field/method is accessible from all classes
 	 * private - this field/method is accessible from only this class
@@ -79,6 +97,15 @@ public class objects {
 	 * 	  	from a static method results in a runtime error!
 	 * 	- only one static method exists in memory
 	 *
+	 * Static fields - Only one instance of it exists
+	 * So if you have a static variable that increments whenever
+	 * an object of that class is made, that variable will increment globally
+	 * All objects of that class will point to that specific static variable
+	 *
+	 * ^ same with methods
+	 *
+	 *
+	 *
 	 * overloading methods
 	 * 	void draw(int i);
 	 * 	void draw(String i);
@@ -91,5 +118,28 @@ public class objects {
 	 * say there is class Poop
 	 *
 	 * Poop objectPoop = new Poop();
+	 * 
+	 * Accessor methods:
+	 * 	Methods specifically made to access private fields inside of a class instance
+	 * 	Its much better as you can change what the getVariable() function returns
+	 * 	It's more flexible to change
+	 *
+	 * Mutator methods:
+	 * 	Methods that modify private fields 
+	 *
+	 * If a field/method is public you can call it by
+	 * 	object.method() or object.field
+	 *
+	 * toString()
+	 * All java classes are subclasses of the class Object
+	 * 	Object has a default method toString() that print() calls
+	 * 	whenever the object is called inside of it.
+	 *
+	 * 	on default toString is the address in memory to the object
+	 * 	If you overwrite toString() print will use that instead
 	 *
 	 *
+	 *
+	 */
+
+}
